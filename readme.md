@@ -21,6 +21,12 @@ This repository contains a PyTorch implementation of the following paper:
 
 ## System requirements
 
+## Q&A
+
+1. Why I'm getting the error `OSError: [Errno Incorrect file size]` when downloading the official [Flickr-Faces-HQ Dataset (FFHQ)](https://github.com/NVlabs/ffhq-dataset) dataset?
+
+    We ran into the same issue too. Based on our understanding, at the moment [NVlabs](https://github.com/NVlabs/ffhq-dataset) is hosting the dataset on Google Drive, which has hard quotas (rate-limits) on file downloads and concurrent threads. Given the popularity of this dataset, it indicates that the quota already exceeded. Please reach out directly to [NVlabs](https://github.com/NVlabs/ffhq-dataset) regarding this issue.
+
 ## License
 
 ## Acknowledgements
